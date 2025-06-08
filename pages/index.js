@@ -12,6 +12,8 @@ export default function Home() {
   const YOUR_ADVANCED_COURSE_LINK = "#future-mastery-program"; // Placeholder for future advanced product link
   const YOUR_NAME_OR_BRAND_NAME = "[نام شما/برند شما]"; // e.g., "فردین ترید" or "استراتژی برتر"
   const CURRENT_YEAR = new Date().getFullYear();
+  const YOUR_WEBSITE_VERCEL_URL = "YOUR_WEBSITE_VERCEL_URL"; // e.g., "https://my-trading-website-farsi.vercel.app"
+  const YOUR_TWITTER_HANDLE = "@yourtwitterhandle"; // e.g., "@FardinTrade"
 
   // State for potential pop-up or dynamic elements (optional for now)
   // const [showPopup, setShowPopup] = useState(false);
@@ -35,20 +37,17 @@ export default function Home() {
         {/* Open Graph (for social media sharing) */}
         <meta property="og:title" content={`استراتژی نهایی ترید (ساختار بازار) | ${YOUR_NAME_OR_BRAND_NAME}`} />
         <meta property="og:description" content="کشف سیستم اثبات‌شده ۵ ساله ترید بر اساس ساختار بازار. افزایش وین‌ریت و سودهای شگفت‌انگیز تا ۱:۳۰ R:R. مناسب برای مبتدی تا حرفه‌ای." />
-        {/* IMPORTANT: Replace with your website's actual Vercel URL or custom domain */}
-        <meta property="og:url" content="YOUR_WEBSITE_VERCEL_URL" />
+        <meta property="og:url" content={YOUR_WEBSITE_VERCEL_URL} />
         <meta property="og:type" content="website" />
-        {/* IMPORTANT: Add a compelling social share image in public/images/social-share.png and replace the URL below */}
-        <meta property="og:image" content="YOUR_WEBSITE_VERCEL_URL/public/images/social-share.png" />
+        {/* IMPORTANT: Add a compelling social share image in public/images/social-share.png */}
+        <meta property="og:image" content={`${YOUR_WEBSITE_VERCEL_URL}/images/social-share.png`} />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        {/* IMPORTANT: Replace with your Twitter handle if you have one */}
-        <meta name="twitter:creator" content="@yourtwitterhandle" />
+        <meta name="twitter:creator" content={YOUR_TWITTER_HANDLE} />
         <meta name="twitter:title" content={`استراتژی نهایی ترید (ساختار بازار) | ${YOUR_NAME_OR_BRAND_NAME}`} />
         <meta name="twitter:description" content="کشف سیستم اثبات‌شده ۵ ساله ترید بر اساس ساختار بازار. افزایش وین‌ریت و سودهای شگفت‌انگیز تا ۱:30 R:R. مناسب برای مبتدی تا حرفه‌ای." />
-        {/* IMPORTANT: Same social share image as above */}
-        <meta name="twitter:image" content="YOUR_WEBSITE_VERCEL_URL/public/images/social-share.png" />
+        <meta name="twitter:image" content={`${YOUR_WEBSITE_VERCEL_URL}/images/social-share.png`} />
 
         <link rel="icon" href="/favicon.ico" /> {/* You might want to add a favicon to /public */}
       </Head>
@@ -93,6 +92,7 @@ export default function Home() {
                 <span className="text-green-400 font-bold">بیدار شو!</span> این لحظه، پایان سردرگمی و آغاز سودآوری مداوم در بازارهای مالی است.
               </p>
 
+              {/* Form Container (now pure Tailwind) */}
               <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-3xl inline-block text-right w-full max-w-lg transform transition-all duration-500 hover:scale-[1.02] hover:shadow-4xl border-2 border-green-400">
                 <p className="text-xl md:text-2xl text-white mb-6 font-semibold animate-pulse">
                   آینده مالی شما، از همینجا آغاز می‌شود:
@@ -198,7 +198,7 @@ export default function Home() {
                 نتیجه؟ کشف یک سیستم بی‌نظیر: <span className="text-yellow-400">استراتژی نهایی ترید (Market Structure)</span>. سیستمی که مرا از کابوس ضرر خارج کرد و به سودآوری **پایدار، قابل پیش‌بینی و رؤیایی** رساند.
               </p>
               <p className="text-xl text-white leading-relaxed mt-6">
-                حالا، این **نقشه راه زندگی‌ساز** را با شما به اشتراک می‌گذارم.
+                حالا, این **نقشه راه زندگی‌ساز** را با شما به اشتراک می‌گذارم.
               </p>
             </div>
           </div>
@@ -208,10 +208,10 @@ export default function Home() {
         <section id="ultimate-strategy" className="bg-white py-20 text-center">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-8">
-              دیگر دنبال هیچ استراتژی دیگری نگرد! <br/> این، <span className="text-green-600">پایان جستجوی شماست.</span>
+              دیگر دنبال هیچ استراتژی دیگری نگرد! <br/> این, <span className="text-green-600">پایان جستجوی شماست.</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-800 mb-12 max-w-4xl mx-auto leading-relaxed">
-              شما چک لیست رایگان را دانلود کرده‌اید (اگر نه، در پایین همین صفحه می‌توانید!). این تنها نوک کوه یخ است. برای دستیابی به **وین‌ریت تضمینی، ریسک به ریوارد ۱:۳۰+** و درک کندل به کندل بازار، به استراتژی کامل ما نیاز دارید.
+              شما چک لیست رایگان را دانلود کرده‌اید (اگر نه, در پایین همین صفحه می‌توانید!). این تنها نوک کوه یخ است. برای دستیابی به **وین‌ریت تضمینی, ریسک به ریوارد ۱:۳۰+** و درک کندل به کندل بازار, به استراتژی کامل ما نیاز دارید.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -242,11 +242,11 @@ export default function Home() {
                   </li>
                   <li className="flex items-center justify-end">
                     <span className="ml-2 font-bold text-purple-700 text-2xl">✓</span>
-                    <span className="flex-1">**مبتنی بر ساختار بازار:** درک عمیق‌ترین منطق حرکتی قیمت، نه الگوهای شانسی.</span>
+                    <span className="flex-1">**مبتنی بر ساختار بازار:** درک عمیق‌ترین منطق حرکتی قیمت, نه الگوهای شانسی.</span>
                   </li>
                   <li className="flex items-center justify-end">
                     <span className="ml-2 font-bold text-purple-700 text-2xl">✓</span>
-                    <span className="flex-1">**مدیریت پوزیشن حرفه‌ای:** برای حفظ سود و کاهش ریسک، درست مثل یک تریدر بزرگ.</span>
+                    <span className="flex-1">**مدیریت پوزیشن حرفه‌ای:** برای حفظ سود و کاهش ریسک, درست مثل یک تریدر بزرگ.</span>
                   </li>
                 </ul>
                 <p className="text-lg text-gray-800 mt-6 leading-relaxed font-semibold">
@@ -268,7 +268,7 @@ export default function Home() {
               آیا آماده‌ای این فرصت را از دست بدهی؟
             </h2>
             <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-              هر لحظه که برای تصمیم‌گیری تعلل می‌کنی، هزاران دلار سود بالقوه را از دست می‌دهی. بازار منتظر کسی نمی‌ماند!
+              هر لحظه که برای تصمیم‌گیری تعلل می‌کنی, هزاران دلار سود بالقوه را از دست می‌دهی. بازار منتظر کسی نمی‌ماند!
             </p>
             <a href={YOUR_IRANIAN_PLATFORM_PRODUCT_LINK} className="download-button bg-red-600 text-white py-4 px-10 rounded-full text-2xl font-extrabold hover:bg-red-700 transition-all duration-300 inline-block shadow-lg transform hover:scale-105">
               فرصت را از دست نده! همین الان خرید کن!
@@ -280,7 +280,7 @@ export default function Home() {
         <section id="success-stories" className="bg-white py-20 text-center">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-14">
-              <span className="text-green-600">داستان‌های واقعی،</span> از کسانی که متحول شدند.
+              <span className="text-green-600">داستان‌های واقعی,</span> از کسانی که متحول شدند.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Testimonial 1 */}
@@ -289,7 +289,7 @@ export default function Home() {
                 <Image src="/images/icon-success.png" alt="موفقیت" width={60} height={60} className="mx-auto mb-4" />
                 {/* IMPORTANT: Replace with real testimonial text */}
                 <p className="text-lg italic text-gray-800 mb-4">
-                  "قبل از این استراتژی همیشه در ضرر بودم و امیدی نداشتم. حالا با درک ساختار بازار، معاملاتی با R:R بالا انجام می‌دهم و مسیر ترید من کاملاً عوض شده است!"
+                  "زندگی من قبل و بعد از این استراتژی به دو بخش تقسیم می‌شود! دیگر استرس ندارم و با اطمینان معامله می‌کنم. سودهایم باورنکردنی شده‌اند. بهترین سرمایه‌گذاری عمرم بود!"
                 </p>
                 {/* IMPORTANT: Replace with real customer name/title */}
                 <p className="font-semibold text-blue-700">- [نام مشتری ۱], معامله‌گر مبتدی</p>
@@ -300,7 +300,7 @@ export default function Home() {
                 <Image src="/images/icon-growth.png" alt="رشد" width={60} height={60} className="mx-auto mb-4" />
                 {/* IMPORTANT: Replace with real testimonial text */}
                 <p className="text-lg italic text-gray-800 mb-4">
-                  "به عنوان یک تریدر باتجربه، فکر می‌کردم همه چیز را می‌دانم. اما این سیستم، چشم مرا به روی مفاهیم جدیدی باز کرد که وین‌ریت مرا دو برابر کرد. این یک بازی عوض‌کن است!"
+                  "به عنوان یک تریدر باتجربه, فکر می‌کردم همه چیز را می‌دانم. اما این سیستم, چشم مرا به روی مفاهیم جدیدی باز کرد که وین‌ریت مرا دو برابر کرد. این یک بازی عوض‌کن است!"
                 </p>
                  {/* IMPORTANT: Replace with real customer name/title */}
                 <p className="font-semibold text-blue-700">- [نام مشتری ۲], معامله‌گر حرفه‌ای</p>
@@ -311,7 +311,7 @@ export default function Home() {
                 <Image src="/images/icon-confidence.png" alt="اعتماد به نفس" width={60} height={60} className="mx-auto mb-4" />
                  {/* IMPORTANT: Replace with real testimonial text */}
                 <p className="text-lg italic text-gray-800 mb-4">
-                  "حالا بازار را می‌خوانم، نه اینکه حدس بزنم. دیگر از هیچ معامله‌ای ترس ندارم. این استراتژی به من اعتماد به نفس واقعی در ترید داد."
+                  "حالا بازار را می‌خوانم, نه اینکه حدس بزنم. دیگر از هیچ معامله‌ای ترس ندارم. این استراتژی به من اعتماد به نفس واقعی در ترید داد."
                 </p>
                  {/* IMPORTANT: Replace with real customer name/title */}
                 <p className="font-semibold text-blue-700">- [نام مشتری ۳], کارمند تمام‌وقت</p>
@@ -332,7 +332,7 @@ export default function Home() {
                 className="mx-auto rounded-xl shadow-2xl border-4 border-blue-600 transform transition-all duration-300 hover:scale-105"
               />
               <p className="text-gray-700 mt-6 leading-relaxed">
-                (تصویر بالا نمونه‌ای واقعی از ده‌ها معامله انجام شده با این استراتژی و ریسک به ریوارد ۱:۲۰ را نشان می‌دهد. جزئیات کامل و مثال‌های بیشتر، **فقط در فایل اصلی استراتژی**.)
+                (تصویر بالا نمونه‌ای واقعی از ده‌ها معامله انجام شده با این استراتژی و ریسک به ریوارد ۱:۲۰ را نشان می‌دهد. جزئیات کامل و مثال‌های بیشتر, **فقط در فایل اصلی استراتژی**.)
               </p>
             </div>
           </div>
@@ -345,7 +345,7 @@ export default function Home() {
                     سفر شما به <span className="text-yellow-400">تسلط کامل</span> بر بازار:
                 </h2>
                 <p className="text-xl md:text-2xl text-gray-300 mb-16 max-w-4xl mx-auto leading-relaxed">
-                    استراتژی نهایی ترید، آغازگر مسیر شماست. اما سفر تسلط، ادامه دارد. با ما، هیچوقت درجا نمی‌زنید!
+                    استراتژی نهایی ترید, آغازگر مسیر شماست. اما سفر تسلط, ادامه دارد. با ما, هیچوقت درجا نمی‌زنید!
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -368,7 +368,7 @@ export default function Home() {
                         <Image src="/images/journey-step2.png" alt="گام ۲" width={80} height={80} className="mx-auto mb-6 animate-fadeIn delay-100" />
                         <h3 className="text-2xl font-bold text-white mb-4">گام ۲: <br/> تسلط بر استراتژی نهایی</h3>
                         <p className="text-lg text-gray-300 leading-relaxed">
-                            تمام رازها، ورودهای میلیمتری، مدیریت پوزیشن و رسیدن به سودهای رؤیایی. این قلب سیستم ماست!
+                            تمام رازها, ورودهای میلیمتری, مدیریت پوزیشن و رسیدن به سودهای رؤیایی. این قلب سیستم ماست!
                         </p>
                         {/* CTA to Main Paid Product */}
                         <a href={YOUR_IRANIAN_PLATFORM_PRODUCT_LINK} className="text-blue-400 hover:text-blue-500 font-bold mt-4 inline-block text-lg underline">
@@ -381,7 +381,7 @@ export default function Home() {
                         <Image src="/images/journey-step3.png" alt="گام ۳" width={80} height={80} className="mx-auto mb-6 animate-fadeIn delay-200" />
                         <h3 className="text-2xl font-bold text-white mb-4">گام ۳: <br/> برنامه تسلط پیشرفته (به زودی!)</h3>
                         <p className="text-lg text-gray-300 leading-relaxed">
-                            برای حرفه‌ای‌های واقعی: تکنیک‌های پیشرفته، مدیریت پورتفولیو، و ذهنیتی شکست‌ناپذیر. **آماده باشید!**
+                            برای حرفه‌ای‌های واقعی: تکنیک‌های پیشرفته, مدیریت پورتفولیو و ذهنیتی شکست‌ناپذیر. **آماده باشید!**
                         </p>
                         {/* CTA to Future Product/Placeholder */}
                         <a href={YOUR_ADVANCED_COURSE_LINK} className="text-purple-400 hover:text-purple-500 font-bold mt-4 inline-block text-lg underline">
@@ -395,18 +395,18 @@ export default function Home() {
        {/* Risk Reversal / Guarantee Section - Reinforce Trust at the End */}
       <section className="py-16 bg-blue-700 text-white text-center">
           <div className="container mx-auto px-4 max-w-3xl">
-              <h2 className="text-3xl md:text-4xl font-extrabold mb-6">بدون هیچ ریسکی، آینده‌ات رو بساز!</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-6">بدون هیچ ریسکی, آینده‌ات رو بساز!</h2>
               <p className="text-xl mb-8">
-                  ما به قدرت تحول‌آفرین استراتژی‌مون ایمان داریم. به همین دلیل، تمام ریسک رو ما به عهده می‌گیریم:
+                  ما به قدرت تحول‌آفرین استراتژی‌مون ایمان داریم. به همین دلیل, تمام ریسک رو ما به عهده می‌گیریم:
               </p>
               <div className="bg-white text-gray-900 p-8 rounded-lg shadow-xl border-b-8 border-yellow-500">
                    {/* IMPORTANT: Add a guarantee icon */}
                    <Image src="/images/icon-guarantee.png" alt="تضمین بازگشت وجه" width={70} height={70} className="mx-auto mb-4" />
                   <h3 className="text-2xl font-bold mb-4">۱۰۰٪ ضمانت بازگشت وجه تا ۱۴ روز!</h3>
                   <p className="text-lg leading-relaxed">
-                      اگر ظرف ۱۴ روز پس از خرید، به هر دلیلی (حتی اگر فقط نظرت عوض شد!) احساس کردی این استراتژی برای تو مناسب نیست یا انتظاراتت رو برآورده نکرد، کافیه به ما پیام بدی تا تمام وجهت رو **بدون هیچ سوال و چونه‌ای** بهت برگردونیم.
+                      اگر ظرف ۱۴ روز پس از خرید, به هر دلیلی (حتی اگر فقط نظرت عوض شد!) احساس کردی این استراتژی برای تو مناسب نیست یا انتظاراتت رو برآورده نکرد, کافیه به ما پیام بدی تا تمام وجهت رو **بدون هیچ سوال و چونه‌ای** بهت برگردونیم.
                   </p>
-                  <p className="text-md mt-4 italic text-gray-700">تنها چیزی که با امتحان کردن این استراتژی از دست می‌دی، فرصت رهایی از ضرر و رسیدن به سودهای رؤیاییه!</p>
+                  <p className="text-md mt-4 italic text-gray-700">تنها چیزی که با امتحان کردن این استراتژی از دست می‌دی, فرصت رهایی از ضرر و رسیدن به سودهای رؤیاییه!</p>
               </div>
           </div>
       </section>
@@ -418,17 +418,17 @@ export default function Home() {
            {/* <div className="absolute inset-0 z-0 opacity-20" style={{backgroundImage: 'url(/images/abstract-pattern-green.svg)', backgroundRepeat: 'repeat'}}></div> */}
            <div className="container mx-auto px-4 relative z-10">
                <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-8 leading-tight animate-pulse-fomo drop-shadow-lg">
-                <span className="text-yellow-300">یک تصمیم نهایی.</span> <br className="md:hidden"/> یک عمر پشیمانی، یا <span className="text-yellow-300">آزادی مالی؟</span>
+                <span className="text-yellow-300">یک تصمیم نهایی.</span> <br className="md:hidden"/> یک عمر پشیمانی, یا <span className="text-yellow-300">آزادی مالی؟</span>
               </h2>
               <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
-                این لحظه، نقطه عطفی در زندگی شماست. بازار منتظر کسی نمی‌ماند. آیا آماده‌اید برای همیشه از ضرر خداحافظی کنید و به دنیای سودهای پایدار قدم بگذارید؟ **فرصت رو از دست نده!**
+                این لحظه, نقطه عطفی در زندگی شماست. بازار منتظر کسی نمی‌ماند. آیا آماده‌اید برای همیشه از ضرر خداحافظی کنید و به دنیای سودهای پایدار قدم بگذارید؟ **فرصت رو از دست نده!**
               </p>
                {/* Final Primary CTA Button - Repeat for maximum impact */}
                 <a href={YOUR_IRANIAN_PLATFORM_PRODUCT_LINK} className="download-button bg-gradient-to-r from-red-600 to-orange-700 text-white py-6 px-16 rounded-full text-4xl font-extrabold hover:from-red-700 hover:to-orange-800 transition-all duration-300 inline-block shadow-2xl transform hover:scale-105 animate-wiggle-strong"> {/* Added new animation class */}
                     <span className="animate-pulse-once">بله! می‌خواهم زندگی مالی‌ام را همین الان متحول کنم!</span>
               </a>
               <p className="text-md text-gray-300 mt-6 leading-relaxed">
-                با تضمین ۱۰۰٪ بازگشت وجه تا ۱۴ روز. ریسک با ماست، سود برای شما.
+                با تضمین ۱۰۰٪ بازگشت وجه تا ۱۴ روز. ریسک با ماست, سود برای شما.
               </p>
            </div>
         </section>
@@ -438,7 +438,7 @@ export default function Home() {
            <div className="container mx-auto px-4">
                 <p className="text-xl font-bold text-gray-800 mb-6">هنوز <span className="text-blue-700">کاملاً مطمئن</span> نیستید؟</p>
                 <p className="text-lg text-gray-700 mb-8">
-                    با دانلود **نقشه راه رایگان** ما، اولین قدم‌های خود را بدون هیچ ریسک و تعهدی بردارید و با مفاهیم پایه ساختار بازار آشنا شوید. <span className="font-semibold">حتی این چک لیست هم می‌تواند دیدگاه شما را تغییر دهد!</span>
+                    با دانلود **نقشه راه رایگان** ما, اولین قدم‌های خود را بدون هیچ ریسک و تعهدی بردارید و با مفاهیم پایه ساختار بازار آشنا شوید. <span className="font-semibold">حتی این چک لیست هم می‌تواند دیدگاه شما را تغییر دهد!</span>
                 </p>
                  {/* Link to Free Checklist Button - Secondary CTA */}
                   <a href={YOUR_GUMROAD_FREE_PRODUCT_LINK_FOR_FARSI_CHECKLIST} className="bg-blue-600 text-white py-3 px-6 rounded-lg text-xl font-bold hover:bg-blue-700 transition-all duration-300 inline-block no-underline shadow-lg transform hover:scale-105">
@@ -454,7 +454,6 @@ export default function Home() {
           <nav className="footer-nav flex justify-center gap-4 mb-4 w-full"> {/* Centered Footer Nav */}
             {/* IMPORTANT: You might want to create this privacy policy page (pages/privacy.js) */}
             <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">سیاست حفظ حریم خصوصی</Link>
-             {/* Link to the main product on the Iranian platform - Redundant but okay in footer */}
             <a href={YOUR_IRANIAN_PLATFORM_PRODUCT_LINK} className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
               مشاهده استراتژی کامل ترید در [نام پلتفرم]
             </a>

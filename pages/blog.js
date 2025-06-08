@@ -37,11 +37,11 @@ export default function Blog({ allPostsData }) { // Keep function name as Blog f
           </div>
           <nav className="main-nav hidden md:flex space-x-6 space-x-reverse"> {/* space-x-reverse for RTL */}
             <Link href="/" className="text-lg font-bold text-white hover:text-green-400 transition-colors duration-300">خانه</Link>
-            <a href="/#ultimate-strategy" className="text-lg font-bold text-white hover:text-green-400 transition-colors duration-300">استراتژی اصلی</a> {/* Link back to section on Home */}
-            <a href="/#mastery-journey" className="text-lg font-bold text-white hover:text-yellow-400 transition-colors duration-300">نقشه راه تسلط</a> {/* Link back to section on Home */}
-            <a href="/#success-stories" className="text-lg font-bold text-white hover:text-blue-400 transition-colors duration-300">داستان‌های موفقیت</a> {/* Link back to section on Home */}
-            {/* IMPORTANT: You need to create this contact page (pages/contact.js) */}
-            <Link href="/contact" className="text-lg font-bold text-white hover:text-purple-400 transition-colors duration-300">تماس با ما</Link>
+             {/* Link back to blog list (now Specialized Articles) */}
+            <Link href="/blog" className="text-lg font-bold text-white hover:text-blue-400 transition-colors duration-300">مقالات تخصصی</Link>
+            {/* Add other menu items as needed, linking to sections on the home page or new pages */}
+             {/* <a href="/#ultimate-strategy" className="text-lg font-bold text-white hover:text-green-400 transition-colors duration-300">استراتژی اصلی</a> */}
+             {/* <a href="/#mastery-journey" className="text-lg font-bold text-white hover:text-yellow-400 transition-colors duration-300">نقشه راه تسلط</a> */}
           </nav>
           {/* Mobile menu icon - will be implemented later with JS */}
           <button className="md:hidden text-white text-3xl">☰</button>
@@ -54,7 +54,7 @@ export default function Blog({ allPostsData }) { // Keep function name as Blog f
           {/* Updated Heading */}
           <h1 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-12 text-center">مقالات تخصصی و بینش‌های بازار</h1>
            <p className="text-xl md:text-2xl text-gray-800 mb-12 max-w-4xl mx-auto text-center leading-relaxed">
-              دانش خود را عمیق‌تر کنید و با مفاهیم کلیدی ترید آشنا شوید. هر مقاله، یک قدم به سوی تسلط!
+              دانش خود را عمیق‌تر کنید و با مفاهیم کلیدی ترید آشنا شوید. هر مقاله, یک قدم به سوی تسلط!
            </p>
           <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {allPostsData.map(({ id, date, title, description }) => (
