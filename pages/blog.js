@@ -59,7 +59,8 @@ export default function Blog({ allPostsData }) { // Keep function name as Blog f
           <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {allPostsData.map(({ id, date, title, description }) => (
               <div key={id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border-b-4 border-blue-500"> {/* Added border */}
-                <Link href={\`/posts/\${id}\`} className="block">
+                {/* FIX: Changed template literal to string concatenation */}
+                <Link href={"/posts/" + id} className="block">
                   {/* You can add a placeholder image here if you don't have one for each post */}
                   {/* IMPORTANT: Add a placeholder image for blog posts /images/placeholder-blog.png */}
                   {/* <Image src="/images/placeholder-blog.png" alt={title} width={400} height={200} className="w-full h-48 object-cover" /> */}
@@ -76,7 +77,7 @@ export default function Blog({ allPostsData }) { // Keep function name as Blog f
         </div>
       </main>
 
-      {/* Footer - Consistent across pages */}
+      {/* Footer - Consistent with Home Page */}
       <footer className="bg-gray-900 text-white py-8 text-center border-t border-gray-700">
         <div className="container mx-auto flex flex-wrap justify-center items-center gap-4 px-4">
           <nav className="footer-nav flex justify-center gap-4 mb-4 w-full"> {/* Centered Footer Nav */}

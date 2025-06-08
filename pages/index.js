@@ -44,9 +44,11 @@ export default function Home() {
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
+        {/* IMPORTANT: Replace with your Twitter handle if you have one */}
         <meta name="twitter:creator" content={YOUR_TWITTER_HANDLE} />
         <meta name="twitter:title" content={`استراتژی نهایی ترید (ساختار بازار) | ${YOUR_NAME_OR_BRAND_NAME}`} />
         <meta name="twitter:description" content="کشف سیستم اثبات‌شده ۵ ساله ترید بر اساس ساختار بازار. افزایش وین‌ریت و سودهای شگفت‌انگیز تا ۱:30 R:R. مناسب برای مبتدی تا حرفه‌ای." />
+        {/* IMPORTANT: Same social share image as above */}
         <meta name="twitter:image" content={`${YOUR_WEBSITE_VERCEL_URL}/images/social-share.png`} />
 
         <link rel="icon" href="/favicon.ico" /> {/* You might want to add a favicon to /public */}
@@ -89,13 +91,13 @@ export default function Home() {
                 اگر تا امروز فقط ضرر کردی... <br/> اگر نقشه راه نداری...
               </h1>
               <p className="text-2xl md:text-3xl text-gray-200 mb-10 leading-relaxed font-light">
-                <span className="text-green-400 font-bold">بیدار شو!</span> این لحظه، پایان سردرگمی و آغاز سودآوری مداوم در بازارهای مالی است.
+                <span className="text-green-400 font-bold">بیدار شو!</span> این لحظه, پایان سردرگمی و آغاز سودآوری مداوم در بازارهای مالی است.
               </p>
 
               {/* Form Container (now pure Tailwind) */}
               <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-3xl inline-block text-right w-full max-w-lg transform transition-all duration-500 hover:scale-[1.02] hover:shadow-4xl border-2 border-green-400">
                 <p className="text-xl md:text-2xl text-white mb-6 font-semibold animate-pulse">
-                  آینده مالی شما، از همینجا آغاز می‌شود:
+                  آینده مالی شما, از همینجا آغاز می‌شود:
                 </p>
                 {/* Primary CTA Button - Links to Free Checklist */}
                 <a href={YOUR_GUMROAD_FREE_PRODUCT_LINK_FOR_FARSI_CHECKLIST} className="bg-gradient-to-r from-green-500 to-teal-600 text-white py-5 px-10 rounded-full text-3xl font-extrabold hover:from-green-600 hover:to-teal-700 transition-all duration-300 block w-full text-center no-underline shadow-lg transform hover:scale-105">
@@ -171,7 +173,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-2xl text-red-800 mt-16 font-extrabold leading-relaxed animate-fadeIn">
-              <span className="text-red-600">پایان این کابوس، همینجاست.</span> آماده‌ای برای یک زندگی متفاوت؟
+              <span className="text-red-600">پایان این کابوس, همینجاست.</span> آماده‌ای برای یک زندگی متفاوت؟
             </p>
           </div>
         </section>
@@ -189,13 +191,13 @@ export default function Home() {
               </h2>
               {/* IMPORTANT: This is CRUCIAL. Write your personal story here. Be authentic, relatable, and show your journey from struggle to discovery. Use emotion! */}
               <p className="text-xl text-gray-300 leading-relaxed mb-6">
-                 [اینجا داستان شخصی خودتان را بنویسید. از اینکه چطور شروع کردید، با چه مشکلاتی روبرو شدید، چقدر ضرر کردید (با عدد)، چقدر زمان صرف کردید، چقدر ناامید شدید. از جزئیات احساسی استفاده کنید.]
+                 [اینجا داستان شخصی خودتان را بنویسید. از اینکه چطور شروع کردید, با چه مشکلاتی روبرو شدید, چقدر ضرر کردید (با عدد), چقدر زمان صرف کردید, چقدر ناامید شدید. از جزئیات احساسی استفاده کنید.]
               </p>
                <p className="text-xl text-gray-300 leading-relaxed mb-6">
                  [اینجا نقطه عطف را بنویسید. چه چیزی باعث شد همه چیز عوض شود؟ چه چیزی را کشف کردید یا فهمیدید؟]
               </p>
               <p className="text-xl text-yellow-300 leading-relaxed font-bold mt-6">
-                نتیجه؟ کشف یک سیستم بی‌نظیر: <span className="text-yellow-400">استراتژی نهایی ترید (Market Structure)</span>. سیستمی که مرا از کابوس ضرر خارج کرد و به سودآوری **پایدار، قابل پیش‌بینی و رؤیایی** رساند.
+                نتیجه؟ کشف یک سیستم بی‌نظیر: <span className="text-yellow-400">استراتژی نهایی ترید (Market Structure)</span>. سیستمی که مرا از کابوس ضرر خارج کرد و به سودآوری **پایدار, قابل پیش‌بینی و رؤیایی** رساند.
               </p>
               <p className="text-xl text-white leading-relaxed mt-6">
                 حالا, این **نقشه راه زندگی‌ساز** را با شما به اشتراک می‌گذارم.
@@ -409,7 +411,7 @@ export default function Home() {
                   <p className="text-md mt-4 italic text-gray-700">تنها چیزی که با امتحان کردن این استراتژی از دست می‌دی, فرصت رهایی از ضرر و رسیدن به سودهای رؤیاییه!</p>
               </div>
           </div>
-      </section>
+        </section>
 
 
         {/* Final Call to Action - The Irresistible Offer */}
