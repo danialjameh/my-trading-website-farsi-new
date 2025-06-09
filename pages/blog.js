@@ -31,7 +31,8 @@ export default function Blog({ allPostsData }) { // Keep function name as Blog f
         <div className="container mx-auto flex justify-between items-center px-4">
           <div className="logo">
             <Link href="/">
-              {/* Replace /images/farsi-logo-light.png with your actual light logo image path */}
+              {/* IMPORTANT: Replace /images/farsi-logo-light.png with your actual light logo image path */}
+               {/* Make sure this image exists in your public/images folder */}
               <Image src="/images/farsi-logo-light.png" alt={`لوگو ${YOUR_NAME_OR_BRAND_NAME}`} width={180} height={45} className="h-12 object-contain cursor-pointer transition-transform duration-300 hover:scale-105" />
             </Link>
           </div>
@@ -62,7 +63,8 @@ export default function Blog({ allPostsData }) { // Keep function name as Blog f
                 {/* FIX: Changed template literal to string concatenation */}
                 <Link href={"/posts/" + id} className="block">
                   {/* You can add a placeholder image here if you don't have one for each post */}
-                  {/* IMPORTANT: Add a placeholder image for blog posts /images/placeholder-blog.png */}
+                   {/* IMPORTANT: Add a placeholder image for blog posts /images/placeholder-blog.png */}
+                   {/* Make sure this image exists in your public/images folder */}
                   {/* <Image src="/images/placeholder-blog.png" alt={title} width={400} height={200} className="w-full h-48 object-cover" /> */}
                   <div className="p-6 text-right"> {/* Ensure text alignment */}
                     <h2 className="text-xl font-bold text-blue-800 mb-2">{title}</h2>
