@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getSortedPostsData } from '../lib/posts';
+import { getSortedPostsData } from '../lib/posts'; // Path relative to pages/
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -40,9 +40,10 @@ export default function Blog({ allPostsData }) { // Keep function name as Blog f
             <Link href="/" className="text-lg font-bold text-white hover:text-green-400 transition-colors duration-300">خانه</Link>
              {/* Link back to blog list (now Specialized Articles) */}
             <Link href="/blog" className="text-lg font-bold text-white hover:text-blue-400 transition-colors duration-300">مقالات تخصصی</Link>
-            {/* Add other menu items as needed, linking to sections on the home page or new pages */}
-             {/* <a href="/#ultimate-strategy" className="text-lg font-bold text-white hover:text-green-400 transition-colors duration-300">استراتژی اصلی</a> */}
-             {/* <a href="/#mastery-journey" className="text-lg font-bold text-white hover:text-yellow-400 transition-colors duration-300">نقشه راه تسلط</a> */}
+            {/* Added About Me link */}
+            <Link href="/about" className="text-lg font-bold text-white hover:text-orange-400 transition-colors duration-300">درباره من</Link>
+            {/* IMPORTANT: You need to create this contact page (pages/contact.js) */}
+            <Link href="/contact" className="text-lg font-bold text-white hover:text-purple-400 transition-colors duration-300">تماس با ما</Link>
           </nav>
           {/* Mobile menu icon - will be implemented later with JS */}
           <button className="md:hidden text-white text-3xl">☰</button>
