@@ -1,4 +1,5 @@
-// pages/index.js
+// This is a test commit change
+
 import Head from 'next/head';
 import Image from 'next/image'; // For optimized images
 import Link from 'next/link'; // For client-side navigation
