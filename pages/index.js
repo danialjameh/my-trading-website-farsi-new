@@ -106,7 +106,7 @@ export default function Home() {
                   آینده مالی شما, از همینجا آغاز می‌شود:
                 </p>
                 {/* Primary CTA Button - Links to Free Checklist */}
-                <a href={YOUR_GUMROAD_FREE_PRODUCT_LINK_FOR_FARSI_CHECKLIST} className="bg-gradient-to-r from-green-500 to-teal-600 text-white py-5 px-10 rounded-full text-3xl font-extrabold hover:from-green-600 hover:to-teal-700 transition-all duration-300 block w-full text-center no-underline shadow-lg transform hover:scale-105">
+                <a href={YOUR_GUMROAD_FREE_PRODUCT_LINK_FOR_FARSI_CHECKLIST} className="download-button bg-gradient-to-r from-green-500 to-teal-600 text-white py-5 px-10 rounded-full text-3xl font-extrabold hover:from-green-600 hover:to-teal-700 transition-all duration-300 block w-full text-center no-underline shadow-lg transform hover:scale-105">
                   دانلود نقشه راه رایگان (چک لیست)
                 </a>
                 <p className="text-sm text-gray-300 mt-4 leading-relaxed">
@@ -327,7 +327,7 @@ export default function Home() {
                 {/* IMPORTANT: Add icon /images/icon-confidence.png */}
                  {/* Make sure this image exists in your public/images folder */}
                 <Image src="/images/icon-confidence.png" alt="اعتماد به نفس" width={60} height={60} className="mx-auto mb-4" />
-                 {/* IMPORTANT: Replace with real testimonial text */}
+                {/* IMPORTANT: Replace with real testimonial text */}
                 <p className="text-lg italic text-gray-800 mb-4">
                   "حالا بازار را می‌خوانم, نه اینکه حدس بزنم. دیگر از هیچ معامله‌ای ترس ندارم. این استراتژی به من اعتماد به نفس واقعی در ترید داد."
                 </p>
@@ -431,8 +431,7 @@ export default function Home() {
                   </p>
                   <p className="text-md mt-4 italic text-gray-700">تنها چیزی که با امتحان کردن این استراتژی از دست می‌دی, فرصت رهایی از ضرر و رسیدن به سودهای رؤیاییه!</p>
               </div>
-          </div>
-        </section>
+            </section>
 
 
         {/* Final Call to Action - The Irresistible Offer */}
