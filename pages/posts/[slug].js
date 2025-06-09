@@ -42,7 +42,8 @@ export default function Post({ postData }) {
         <div className="container mx-auto flex justify-between items-center px-4">
           <div className="logo">
             <Link href="/">
-              {/* Replace /images/farsi-logo-light.png with your actual light logo image path */}
+              {/* IMPORTANT: Replace /images/farsi-logo-light.png with your actual light logo image path */}
+               {/* Make sure this image exists in your public/images folder */}
               <Image src="/images/farsi-logo-light.png" alt={`لوگو ${YOUR_NAME_OR_BRAND_NAME}`} width={180} height={45} className="h-12 object-contain cursor-pointer transition-transform duration-300 hover:scale-105" />
             </Link>
           </div>
@@ -50,9 +51,10 @@ export default function Post({ postData }) {
             <Link href="/" className="text-lg font-bold text-white hover:text-green-400 transition-colors duration-300">خانه</Link>
              {/* Link back to blog list (now Specialized Articles) */}
             <Link href="/blog" className="text-lg font-bold text-white hover:text-blue-400 transition-colors duration-300">مقالات تخصصی</Link>
-            {/* Add other menu items as needed, linking to sections on the home page or new pages */}
-             {/* <a href="/#ultimate-strategy" className="text-lg font-bold text-white hover:text-green-400 transition-colors duration-300">استراتژی اصلی</a> */}
-             {/* <a href="/#mastery-journey" className="text-lg font-bold text-white hover:text-yellow-400 transition-colors duration-300">نقشه راه تسلط</a> */}
+            {/* Added About Me link */}
+            <Link href="/about" className="text-lg font-bold text-white hover:text-orange-400 transition-colors duration-300">درباره من</Link>
+            {/* IMPORTANT: You need to create this contact page (pages/contact.js) */}
+            <Link href="/contact" className="text-lg font-bold text-white hover:text-purple-400 transition-colors duration-300">تماس با ما</Link>
           </nav>
           {/* Mobile menu icon - will be implemented later with JS */}
           <button className="md:hidden text-white text-3xl">☰</button>
@@ -74,11 +76,11 @@ export default function Post({ postData }) {
           <section className="mt-12 p-6 bg-blue-50 rounded-lg text-center shadow-inner border border-blue-200"> {/* Added border */}
             <h3 className="text-2xl font-bold text-blue-900 mb-4">آیا آماده‌اید عمیق‌تر شوید؟</h3>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              با دانلود **نقشه راه رایگان** ما, اولین قدم‌های خود را در مسیر ترید مطمئن بردارید و مفاهیم کلیدی ساختار بازار را بیاموزید. این چک لیست, شروع تحول شماست!
+              با دانلود **نقشه راه رایگان** ما, اولین قدم‌های خود را در مسیر ترید مطمئن بردارید و با مفاهیم پایه ساختار بازار آشنا شوید. <span className="font-semibold">حتی این چک لیست هم می‌تواند دیدگاه شما را تغییر دهد!</span>
             </p>
             {/* CTA to Free Checklist */}
             <a href={YOUR_GUMROAD_FREE_PRODUCT_LINK_FOR_FARSI_CHECKLIST} className="download-button bg-gradient-to-r from-green-600 to-teal-700 text-white py-3 px-6 rounded-lg text-xl font-bold hover:from-green-700 hover:to-teal-800 transition-all duration-300 inline-block no-underline shadow-lg transform hover:scale-105">
-              دانلود نقشه راه رایگان
+              دانلود نقشه راه رایگان (چک لیست)
             </a>
             <p className="text-md text-gray-700 mt-4 leading-relaxed">
               و برای کشف استراتژی کامل و رسیدن به سود مستمر, [نام پلتفرم ایرانی شما] را بررسی کنید:
