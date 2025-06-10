@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import { getAllPostIds, getPostData } from '../../lib/posts'; // Path relative to pages/posts/
 
 // This function gets called at build time
 export async function getStaticPaths() {
@@ -24,6 +24,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Post({ postData }) {
+  // IMPORTANT: Replace these placeholders with your actual links and names
   const YOUR_NAME_OR_BRAND_NAME = "[نام شما/برند شما]"; // Replace
   const YOUR_GUMROAD_FREE_PRODUCT_LINK_FOR_FARSI_CHECKLIST = "YOUR_GUMROAD_FREE_PRODUCT_LINK_FOR_FARSI_CHECKLIST"; // From Gumroad
   const YOUR_IRANIAN_PLATFORM_PRODUCT_LINK = "YOUR_IRANIAN_PLATFORM_PRODUCT_LINK"; // From your Iranian platform
